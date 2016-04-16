@@ -11,3 +11,6 @@ pip install -U scikit-learn
 
 git clone https://github.com/CIFASIS/VDiscover.git
 cd VDiscover && python setup.py install && cd ..
+
+# Fix Address space layout randomization
+echo 0 > /proc/sys/kernel/randomize_va_space
